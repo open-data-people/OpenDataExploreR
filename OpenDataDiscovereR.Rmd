@@ -122,8 +122,7 @@ Discover top data by:
 sample_search_term <- sample(sample_search_terms,1)
 textInput("query", label = "Query:", value = sample_search_term, placeholder = "search by")
 
-sliderInput("min_should_match", label = "Minimum word match", min = 1, max = 10, value = 2, step = 1, round = FALSE,
-  format = NULL, locale = NULL, ticks = FALSE, animate = FALSE, dragRange = TRUE)
+sliderInput("min_should_match", label = "Minimum word match", min = 1, max = 10, value = 2, step = 1, round = FALSE, ticks = FALSE, animate = FALSE, dragRange = TRUE)
 
 selectInput("asset_type", label = "Type:",
             choices = c("dataset","chart","map","story","filter","datalens","measure","href","federated_href","file","link","form","calendar"), selected="dataset")
